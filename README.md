@@ -1,3 +1,3 @@
 # Linux
 
-A place to enter Linux tools that I need to get more familiar with. 
+Linux specific tools and tricks. 
