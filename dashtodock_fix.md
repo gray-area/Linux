@@ -20,19 +20,22 @@ I then do the following:
 ```
 nano updates.txt
 ```
+
+Delete the "Listing..." entry. Then do it again as follows:
+
 ```
 ctrl+w
 Listing
 ```
 
-Delete the "Listing..." entry. Then do it again as follows:
+Delete the whole "Gnome-shell...dashtodock" line.
 
 ```
 ctrl+w
 dashtodock
 ```
 
-Delete the whole "Gnome-shell...dashtodock" line.
+Exit the nano text editor by using the following commands:
 
 ```
 ctrl+x
