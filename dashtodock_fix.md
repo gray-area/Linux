@@ -15,24 +15,16 @@ Cat the .txt file, cut the line at the /, and sort. Then output to update_final.
 cat upgrade.txt | cut -d "/" -f1 | sort -u > update_final.txt && echo `cat update_final.txt` > updates.txt
 ```
 
-I then do the following:
+I then do the following to delete the "Listing..." entry.
 
 ```
-nano updates.txt
+sed -i.bak 's/Listing...//g' updates.txt
 ```
 
-Delete the "Listing..." entry. Then do it again as follows:
+Then do it again as follows: Delete the whole "Gnome-shell...dashtodock" line.
 
 ```
-ctrl+w
-Listing
-```
-
-Delete the whole "Gnome-shell...dashtodock" line.
-
-```
-ctrl+w
-dashtodock
+sed -i.bak 's/{FULLGNOMESHELLDTDHERE}//g' updates.txt
 ```
 
 Exit the nano text editor by using the following commands:
